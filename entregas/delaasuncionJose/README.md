@@ -1,6 +1,8 @@
 # Reto-001
 
-Esta es mi solución al reto 001, en donde se hacen tres modelos del dominio (sombra, simpatía y farmear aura). El planteamiento se hizo en grupo, en donde en conjunto trabajamos y llegamos a una conclusión sobre los diagramas.
+Esta es mi solución al reto 001, en donde se hacen tres modelos del dominio (sombra, simpatía y farmear aura). El planteamiento se hizo en grupo, en donde en conjunto trabajamos y llegamos a una conclusión sobre los diagramas en la pizarra.
+
+![Trabajo_Grupo](./imagenes/pizarra.jpeg)
 
 ## 1. Farmear aura
 
