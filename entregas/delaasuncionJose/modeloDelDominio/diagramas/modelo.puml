@@ -1,22 +1,54 @@
-@startuml v2
-title Version 2 - Arquitectura del alquiler
+@startuml v3
+title Version 3 - Arquitectura del alquiler
 
-object Persona
-object Arrendador
-object Inquilino
-object Contrato
-object Inmueble
-object Mensualidad
-object Gastos
-object Impuestos
-object Beneficio
+object Persona {
+  nombre
+  DNI
+  telefono
+  ingresos
+}
+object Arrendador {
+  numeroInmuebles
+}
+object Inquilino {
+  email
+}
+object ContratoAlquiler {
+  tipoAlquiler
+  vigencia
+  fecha
+}
+object Inmueble {
+  fechaCompra
+  reformado
+  tamaño
+  direccion
+}
+object Mensualidad {
+  cuantia
+  fechaLimite
+}
+object Gastos {
+  ibi 
+  agua
+  luz
+  extras
+}
+object Impuestos {
+  total
+  pagado
+  deducciones
+}
+object Beneficio {
+  total
+}
 
 Persona --> Arrendador : es
 Persona --> Inquilino : es
 Arrendador --> Inmueble : tiene
-Arrendador --> Contrato : redacta
-Inquilino --> Contrato : firma
-Contrato --> Inmueble : alquila
+Arrendador --> ContratoAlquiler : redacta
+Inquilino --> ContratoAlquiler : firma
+ContratoAlquiler --> Inmueble : alquila
 Inquilino --> Mensualidad : paga
 Mensualidad --> Impuestos : paga
 Inmueble --> Gastos : tiene
