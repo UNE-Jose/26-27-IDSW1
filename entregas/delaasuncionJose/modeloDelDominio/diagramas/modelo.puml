@@ -16,12 +16,12 @@ Persona --> Inquilino : es
 Arrendador --> Inmueble : tiene
 Arrendador --> Contrato : redacta
 Inquilino --> Contrato : firma
-Contrato -> Inmueble : alquila
+Contrato --> Inmueble : alquila
 Inquilino --> Mensualidad : paga
 Mensualidad --> Impuestos : paga
 Inmueble --> Gastos : tiene
-Gastos --> Impuestos : deduce
+Gastos -> Impuestos : deduce
 Mensualidad --> Beneficio : genera
-Beneficio -- Arrendador : otorga
+Beneficio -up-> Arrendador : otorga
 
 @enduml
