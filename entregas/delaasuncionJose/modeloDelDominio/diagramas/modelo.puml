@@ -1,5 +1,5 @@
-@startuml v1
-title Version 1 - Arquitectura del alquiler
+@startuml v2
+title Version 2 - Arquitectura del alquiler
 
 object Persona
 object Arrendador
@@ -10,5 +10,18 @@ object Mensualidad
 object Gastos
 object Impuestos
 object Beneficio
+
+Persona --> Arrendador : es
+Persona --> Inquilino : es
+Arrendador --> Inmueble : tiene
+Arrendador --> Contrato : redacta
+Inquilino --> Contrato : firma
+Contrato -> Inmueble : alquila
+Inquilino --> Mensualidad : paga
+Mensualidad --> Impuestos : paga
+Inmueble --> Gastos : tiene
+Gastos --> Impuestos : deduce
+Mensualidad --> Beneficio : genera
+Beneficio -- Arrendador : otorga
 
 @enduml
