@@ -30,8 +30,7 @@ object Mensualidad {
 }
 object Gastos {
   ibi 
-  agua
-  luz
+  comunidad
   extras
 }
 object Impuestos {
