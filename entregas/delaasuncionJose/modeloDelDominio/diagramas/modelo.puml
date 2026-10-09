@@ -1,0 +1,14 @@
+@startuml v1
+title Version 1 - Arquitectura del alquiler
+
+object Persona
+object Arrendador
+object Inquilino
+object Contrato
+object Inmueble
+object Mensualidad
+object Gastos
+object Impuestos
+object Beneficio
+
+@enduml
